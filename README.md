@@ -29,24 +29,33 @@ Responsive web design
 
 # Built with
 
-## Front-end
+  ## Front-end
 
-ejs
-Bootstrap
+  ejs
 
-## Back-end
+  Bootstrap
 
-node.js
-express
-mongoDB
-mongoose
-passport
-passport-local
-express-session
-method-override
-connect-flash
+  ## Back-end
 
-## Deployment
+  node.js
 
-Heroku
+  express
+
+  mongoDB
+
+  mongoose
+
+  passport
+
+  passport-local
+
+  express-session
+
+  method-override
+
+  connect-flash
+
+  ## Deployment
+
+  Heroku
 
