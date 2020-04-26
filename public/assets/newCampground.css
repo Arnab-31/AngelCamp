@@ -1,0 +1,67 @@
+.campdetails
+{
+    margin-top: 100px;
+}
+#header-login .campdetails
+{
+    margin-top: 40px;
+}
+.campdetails h3
+{
+    font-family: 'Milonga', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form div
+{
+    text-align: center;
+    margin: 10px;
+}
+
+form div label
+{
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+form div input
+{
+    height: 40px;
+    width: 400px;
+    border: 2px solid  rgb(92, 61, 3);
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+form div button
+{
+    height: 40px;
+    width: 100px;
+    border: 2px solid rgb(92, 61, 3);
+    border-radius: 20px;
+    margin: 10px;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(92, 61, 3);
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form div button:hover
+{
+    background-color: rgb(92, 61, 3);
+    color: #fff;
+}
+
+#header-login p
+{
+    margin-top: 40px;
+    text-align: center;
+}

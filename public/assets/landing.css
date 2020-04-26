@@ -1,0 +1,128 @@
+body {
+    background-color: #000;
+    background-image: linear-gradient(to right, rgba(77, 72, 72, 0.9), rgb(77, 72, 72,0.9));
+  }
+
+div h1{
+    font-family: 'Milonga', cursive;
+    font-size: 70px;
+}
+
+div p{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.landing-button
+{
+    height: 30px;
+    width: 100px;
+    border: 2px solid #E2C74B;
+    color:  #E2C74B;
+    text-align: center;
+    margin: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.landing-button:hover
+{
+    background-color: #E2C74B;
+}
+
+.landing-button a
+{
+    color:  #E2C74B;
+    text-decoration: none;
+}
+
+.landing-button a:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#landing-header {
+z-index: 1;
+position: relative;
+text-align: center;
+padding-top: 30vh;
+}
+
+#landing-header h1 {
+    color:#fff;
+  }
+
+.slideshow { 
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 0;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.slideshow li { 
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+opacity: 0;
+z-index: 0;
+animation: imageAnimation 25s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+background-image: linear-gradient(to right, rgba(48, 45, 45, 0.5), rgb(48, 45, 45,0.5)), url(http://i.imgur.com/K3mPv14.jpg) 
+}
+.slideshow li:nth-child(2) { 
+background-image: linear-gradient(to right, rgba(48, 45, 45, 0.5), rgb(48, 45, 45,0.5)),url(http://i.imgur.com/SBEmFpv.jpg);
+animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) { 
+background-image: linear-gradient(to right, rgba(48, 45, 45, 0.5), rgb(48, 45, 45,0.5)),url(http://i.imgur.com/emvhOnb.jpg);
+animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+background-image: linear-gradient(to right, rgba(48, 45, 45, 0.5), rgb(48, 45, 45,0.5)),url(https://images.unsplash.com/photo-1484960055659-a39d25adcb3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) { 
+background-image: linear-gradient(to right, rgba(48, 45, 45, 0.5), rgb(48, 45, 45,0.5)),url(http://i.imgur.com/TVGe0Ef.jpg);
+animation-delay: 20s; 
+}
+
+@keyframes imageAnimation { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1
+    }
+    30% {
+        opacity: 0
+    }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}

@@ -1,0 +1,24 @@
+<%- include ('./partials/header') %>
+
+<div class="container jumbotron" id="header-login">
+    <div class="campdetails">
+        <p style="margin-bottom: 50px;">Create an AngelCamp account and gain access to Campkeeper,comments, and much more.</p>
+        <h3>SignUp Form</h3>
+        <form action="/register" method="POST">
+            <div>
+                <label for="">UserName</label>
+                <input type="text" name="username" placeholder="name">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div>
+                <button>SignUp</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<%- include ('\partials/footer') %> 

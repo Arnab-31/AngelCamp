@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href= "/public/assets/campgrounds.css" rel="stylesheet" type="text/css" />
+        <link href= "/public/assets/newCampground.css" rel="stylesheet" type="text/css" />
+        <link href= "/public/assets/showCampground.css" rel="stylesheet" type="text/css" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Milonga&display=swap" rel="stylesheet">
+        <title>AngelCamp</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="/">AngelCamp</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="/campgrounds">Campgrounds</a></li>
+                  <li><a href="/campgrounds/new">Add New Campground</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <% if(!currentUser)
+                  {%>
+                    <li><a href="/register"><span class=""></span> Sign Up</a></li>
+                    <li><a href="/login"><span class=""></span> Login</a></li><%
+                  }
+                  else
+                  {%>
+                    <li><a href="#">Signed in as <%= currentUser.username %></a></li>%>
+                    <li><a href="/logout">Logout</a></li>%>
+                  <%}%>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <% if(error && error.length>0){ %>
+              <div class="alert alert-danger" role="alert">
+                <%= error %>
+              </div>
+            <%}%>
+            <% if(success && success.length>0){ %>
+              <div class="alert alert-success" role="alert">
+                <%= success %>
+              </div>
+            <%}%>
+          </div>
+          

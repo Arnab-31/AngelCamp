@@ -1,0 +1,30 @@
+<%- include ('../partials/header') %>
+
+<div class="container">
+    <header class="jumbotron" id="header">
+        <h1>Become A CampKeeper!</h1>
+        <p class="captions">Turn your land into a campsite, host nature friendly campers and earn additional revenue.</p>
+        <div class="campdetails">
+            <h3>Add Your Campground</h3>
+            <form action="/campgrounds" method="POST">
+                <div>
+                    <label for="name">CampName</label>
+                    <input type="text" name="name" placeholder="name" required>
+                </div>
+                <div>
+                    <label for="image">Camp Image</label>
+                    <input type="text" name="image" placeholder="image url" required>
+                </div>
+                <div>
+                    <label for="name">Description</label>
+                    <input type="text" name="description" placeholder="description"  required>
+                </div>
+                <div>
+                    <button>Submit!</button>
+                </div>
+            </form>
+        </div>
+    </header>
+</div>
+
+<%- include ('../partials/footer') %>
