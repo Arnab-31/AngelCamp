@@ -1,4 +1,4 @@
-# AngeLCamp
+# AngelCamp
 This is a node.js application which let's users browse through various camping areas posted by other users and can post their own campground too.Users can also post comments to any campground.
 
 Live Demo
@@ -19,7 +19,7 @@ One cannot edit or delete posts and comments created by other users
 
 Admin can manage all posts and comments
 
-## Manage campground posts with basic functionalities:
+## Manage campground posts 
 
 Create, edit and delete posts and comments
 
