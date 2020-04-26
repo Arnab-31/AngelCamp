@@ -11,21 +11,26 @@ To see the app in action, go to https://mysterious-thicket-79829.herokuapp.com/
 
 User login with username and password
 
-Admin sign-up with admin code
+Admin sign-up 
+
 
 ## Authorization:
 
 One cannot edit or delete posts and comments created by other users
 
-Admin can manage all posts and comments
 
-## Manage campground posts 
+## Manage campground posts and comments
 
-Create, edit and delete posts and comments
+Create campground and post comments
+
+Edit or delete campground by it's owner
+
+Edit or delete comments by it's writer
 
 Flash messages responding to users' interaction with the app
 
 Responsive web design
+
 
 # Built with
 
